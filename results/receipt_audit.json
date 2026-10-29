@@ -1,0 +1,6 @@
+{
+  "total_receipts_audited": 3600,
+  "receipts_matching_pdf_exact": 3600,
+  "mismatches": 0,
+  "audit_seconds": 3.06
+}
