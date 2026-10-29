@@ -1,0 +1,7 @@
+orca_workflow_runtime:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('DUCKDB_PATH', '../data/orca_workflow_runtime.duckdb') }}"
+      threads: 4
