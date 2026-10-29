@@ -1,0 +1,8 @@
+{
+  "runner": "BeamCompatibleLocalDoFnRunner",
+  "documents_ingested": 450,
+  "pages_ingested": 1080,
+  "total_bytes_hashed": 2528352,
+  "adversarial_documents_flagged": 25,
+  "ingest_seconds": 3.5
+}

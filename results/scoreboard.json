@@ -1,0 +1,61 @@
+{
+  "gate_passed": true,
+  "corpus": {
+    "patent_families": 90,
+    "held_out_test_families": 27,
+    "distinct_claim_matters": 1350,
+    "documents_pdf": 450,
+    "pages_pdf": 1080,
+    "docket_appearances": 3600,
+    "scored_fields": 21600
+  },
+  "extraction": {
+    "overall_field_accuracy": 1.0,
+    "exact_match_mentions": 3600,
+    "total_mentions": 3600,
+    "cost_per_document_usd": 0.00106,
+    "total_batch_cost_usd": 0.4753,
+    "extraction_seconds": 0.23
+  },
+  "entity_resolution_held_out": {
+    "split": "test",
+    "true_positives": 1210,
+    "false_positives": 0,
+    "false_negatives": 5,
+    "true_negatives": 1539,
+    "precision": 1.0,
+    "recall": 0.9959,
+    "f1": 0.9979
+  },
+  "missing_code_recovery": {
+    "missing_code_mentions": 514,
+    "linked_correctly": 506,
+    "accuracy": 0.9844
+  },
+  "planted_defects_caught": {
+    "cross_venue_scope_contradictions": "203 of 203",
+    "damages_schedule_math_discrepancies": "45 of 45",
+    "cancelled_ipr_claims_excluded": "45 of 45",
+    "prompt_injection_exhibits_neutralized": "25 of 25"
+  },
+  "receipt_verification": {
+    "total_receipts_audited": 3600,
+    "receipts_matching_pdf_exact": 3600,
+    "mismatches": 0,
+    "audit_seconds": 3.06
+  },
+  "gold_benchmark": {
+    "questions": 60,
+    "correct": 60,
+    "accuracy": 1.0
+  },
+  "adversarial_break_it_suite": {
+    "questions": 50,
+    "passed": 50,
+    "pass_rate": 1.0,
+    "hostile_summaries_tested": 50,
+    "hostile_summaries_blocked": 50,
+    "uncited_claims_reaching_output": 0
+  },
+  "evaluation_seconds": 3.48
+}

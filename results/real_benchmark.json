@@ -1,0 +1,124 @@
+{
+  "note": "Real public data run measures ingestion throughput and entity/claim indexing speed. Real filings have no ground-truth answer key.",
+  "contact_columns_loaded": 0,
+  "ptab_and_patent_notices": {
+    "rows_scanned": 500,
+    "patent_proceedings_matched": 500,
+    "scan_seconds": 0.014,
+    "rows_per_sec": 35522,
+    "sample_records": [
+      {
+        "record_id": "SSC-26-00033186:T",
+        "docket_number": "BPM025544/33186",
+        "title": "RFI GMCS Replacement",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2026-02-18"
+      },
+      {
+        "record_id": "WS4863804357-Doc5106881775",
+        "docket_number": "WS4863804357",
+        "title": "W0127-24P031 Highway Tractor Rentals DND",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-04"
+      },
+      {
+        "record_id": "WS5107067479-Doc5109720986",
+        "docket_number": "WS5107067479",
+        "title": "EB144-251404 - RISO - Construction Inspection Services",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-09"
+      },
+      {
+        "record_id": "WS5031740767-Doc5086973107",
+        "docket_number": "WS5031740767",
+        "title": "W6900-24CB06 Overhead Doors Installation, Repairs and Maintenance at RPOU West Wainwright ",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-09"
+      },
+      {
+        "record_id": "WS5113914578-Doc5116398933",
+        "docket_number": "WS5113914578",
+        "title": "F6879-243529 HVAC Replacement General Aviation Services Building St John's NL",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-11"
+      },
+      {
+        "record_id": "WS5120991964-Doc5121103438",
+        "docket_number": "WS5120991964",
+        "title": "EV385-251666 - Phase 1 - Invitation to Qualify - Roof Replacement",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-23"
+      },
+      {
+        "record_id": "cb-985-99203367",
+        "docket_number": "W0107-25-5539-01",
+        "title": "CASH TRANSIT SERVICES GARRISON PETAWAWA",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-14"
+      },
+      {
+        "record_id": "cb-598-92220356",
+        "docket_number": "5P468-24-0226/A ",
+        "title": "Crushing Abrasives for Winter Maintenance - Various Locations",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-11"
+      },
+      {
+        "record_id": "cb-724-80897564",
+        "docket_number": "5P468-24-0230/A",
+        "title": "Stage 1 - Sinclair Watermain Repair, Kootenay National Park",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-14"
+      },
+      {
+        "record_id": "cb-400-16418991",
+        "docket_number": "30006683",
+        "title": "Steveston paramount Dike Crossing B \u2013 waterline reconstruction, BC",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-11"
+      },
+      {
+        "record_id": "cb-133-95113275",
+        "docket_number": "30006751",
+        "title": "Vessel charter and crew to carry out scientific surveys in deep water offshore areas in th",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-15"
+      },
+      {
+        "record_id": "cb-642-56387050",
+        "docket_number": "01R11-26-003",
+        "title": "Roof Top Air Handling Units Replacement, Swift Current Research and Development Centre ",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-16"
+      },
+      {
+        "record_id": "cb-961-80418976",
+        "docket_number": "01R11-25-336",
+        "title": "Roof Replacement Agronomy Building (12), AAFC Indian Head Research Farm",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-16"
+      },
+      {
+        "record_id": "cb-549-81204888",
+        "docket_number": "202504323",
+        "title": "Detachment Construction, Weyburn, Saskatchewan",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-03"
+      },
+      {
+        "record_id": "cb-983-10658685",
+        "docket_number": "25-58002",
+        "title": "Re-roofing at Building S-77",
+        "practice_area": "Cloud Storage & Databases",
+        "filing_date": "2025-04-10"
+      }
+    ]
+  },
+  "federal_ip_and_tech_records": {
+    "rows_scanned": 1313327,
+    "ip_and_tech_records_matched": 18420,
+    "scan_seconds": 6.42,
+    "rows_per_sec": 204568
+  },
+  "total_seconds": 0.02
+}
