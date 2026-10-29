@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+data/synthetic/
+data/real/
+data/*.duckdb*
+data/*.pkl
+data/extraction_cache.json
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/

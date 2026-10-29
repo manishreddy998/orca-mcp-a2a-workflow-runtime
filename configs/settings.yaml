@@ -1,0 +1,30 @@
+seed: 42
+
+synthetic:
+  patent_families: 90
+  held_out_family_share: 0.30
+  matters: 1350
+  documents: 450
+  appearances: 3600
+
+extraction:
+  batch_concurrency: 20
+  max_retries: 3
+  retry_base_seconds: 0.05
+  vertex_input_cost_per_1m: 0.075
+  vertex_output_cost_per_1m: 0.300
+
+entity_resolution:
+  auto_merge_threshold: 0.88
+  review_floor_threshold: 0.45
+
+evaluation:
+  min_field_accuracy: 0.995
+  min_entity_precision: 0.995
+  min_entity_recall: 0.990
+  min_gold_accuracy: 0.995
+  max_uncited_claims: 0
+
+real:
+  patents_cache_path: "/workspace/municipal-capital-pipeline/data/real/public_infra_tenders_sample.csv"
+  contracts_cache_path: "/workspace/municipal-capital-pipeline/data/real/contracts.csv"

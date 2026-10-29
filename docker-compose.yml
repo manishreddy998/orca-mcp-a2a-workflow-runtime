@@ -1,0 +1,11 @@
+services:
+  patent-dispute-memory:
+    build: .
+    ports:
+      - "8501:8501"
+      - "8120:8120"
+    environment:
+      - WAREHOUSE_TARGET=duckdb
+      - DUCKDB_PATH=data/patent_dispute_memory.duckdb
+      - PYTHONPATH=src:.
+      - DBT_PROFILES_DIR=dbt
