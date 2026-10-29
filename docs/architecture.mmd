@@ -1,0 +1,24 @@
+flowchart TB
+  A2A[Partner Distributor A2A Client<br/>AgentCard Discovery & Task Send] --> GW
+  MCP[Enterprise Host MCP Client<br/>JSON-RPC 2.0 tools/call & resources/read] --> GW
+  subgraph Runtime [ORCA Multi-Tenant Execution Platform]
+    GW[Tenant Auth & RLS Context Gate<br/>X-ORCA-Tenant-Token + Idempotency Key] --> ING[Apache Beam Evidence PDF Ingest<br/>SHA-256 Digest & Prompt Injection Strip]
+    ING --> WORK[20-Way Async Workflow Step Runner<br/>Durable Checkpoints + Exponential Backoff]
+    WORK --> STG[dbt Staging & Benefit Schedule Audit<br/>Base + Rider + Co-Pay Math Reconciliation]
+    STG --> RES[Partner Entity & Record Resolver<br/>Blocking, Logistic Regression, Union-Find]
+    RES --> CHN[dbt Durable State Transition Chains<br/>Checkpoint Recovery & Revoked Rider Filter]
+    CHN --> DB[(PostgreSQL RLS / DuckDB Store<br/>Workflow State, Idempotency Ledger, PDF Receipts)]
+    DB --> MRT[dbt Marts<br/>Deliverables, Tenant Capacity, Scoreboard]
+  end
+  subgraph Gate [Deterministic Contract & Citation Gate]
+    Q[Partner Deliverable Request] --> L[State & Receipt Lookup] --> RC[Evidence Pack Receipt]
+    RC --> M[Structured Deliverable Writer]
+    M --> CK{Contract & Citation Gate<br/>Every dollar, code, and tenant scope<br/>verified against source PDF}
+    RC --> CK
+    CK -->|verified| OUT[A2A Artifact / MCP Tool Response]
+    CK -->|unverified or cross-tenant| REF[Block & Refuse (-32003)]
+  end
+  DB --> L
+  OUT --> UI[Streamlit Console & FastAPI<br/>/.well-known/agent.json, /a2a, /mcp/rpc]
+  BK[50 Adversarial Break-It Checks<br/>+ PDF Auditor Reopening All 450 PDFs] --> CK
+  BK --> CI[GitHub Actions CI Gate]
